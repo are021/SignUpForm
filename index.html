@@ -14,21 +14,47 @@
         <div><span class="disclaimer">(THIS IS NOT A REAL SERVICE)</span> Welcome to the Grand Line / New World Registration service! Explore
         the vast and incredible Grand Line, and set out for an adventure with your friends and allies.<br> Sign Up Below To Get Started!
         </div>
-        <fieldset>
-            <legend>Fill out the Entries Below</legend>
             <form action="#" method = "post" class = "form">
-                <div class="names">
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
+                <fieldset>
+                    <legend>Fill out the Entries Below</legend>
+                    <div class="names">
+                        <div>
+                            <label for="firstname">FIRST NAME</label><br>
+                            <input type="text" name="firstname" id="firstname" required>
+                        </div>
 
-                    <label for="firstname">First Name</label><br>
-                    <input type="text" name="firstname" id="firstname" required>
-
-                </div>
-
+                        <div>
+                            <label for="lastname">LAST NAME</label><br>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>
+                    </div>
+                    <div class="generalinfo">
+                        <div>
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                        <div>
+                            <label for="phone">PHONE NUMBER</label><br>
+                            <input type="tel" name="phonenumber" id="phone" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 123-456-7890">
+                        </div>
+                    </div>
+                    <div class="password">
+                        <div>
+                            
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                            
+                        </div>
+                        <div>
+                            <label for="confirmation">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm" id="confirmation">
+                        </div>
+                    </div>
+                </fieldset>
                 <button type="submit">Submit</button>
             </form>
-        </fieldset>
+        
     </div>
     <footer>
         Property of are021 <a href = "https://github.com/are021">github</a>
