@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 @font-face {
     font-family: pirate-font;
     src: url(../images/black-rose-font/BlackRose-2Onld.ttf);
 }
+
 :root{
     background-image: url("../images/pirateship.jpeg");
     background-position: left;
@@ -15,21 +17,69 @@ body{
     margin:0;
     display:flex;
 }
+
+/*
+    Left Border
+*/
 body>div:first-child{
-    width:40%;
+    display:flex;
+    position:relative;
+    top:7.5em;
+    justify-content: center;
+    width:45%;
     height: 93%;
-    background-color: blue;
+    background-color: rgb(118, 182, 208,40%);
 }
+body>div:first-child>h1{
+    font-weight: bold;
+    font-size:3em;
+}
+
+
+/*
+
+    Main Panel
+
+*/
 body>div:nth-child(2){
-    font-size: 1.25em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3em;
+    line-height:2em;
     box-sizing:border-box;
     justify-content: space-between;
-    width:60%;
+    width:55%;
     height: 93vh;
     background-color: rgb(215, 208, 208);
     padding:20px;
 }
 
+/********** Form ************/
+.formpanel>div:first-child{
+    line-height:1.5em;
+}
+fieldset{
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    box-shadow:0px 3px 10px black;
+}
+fieldset>h3{
+    margin:0;
+}
+.form{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:.7em;
+}
+
+.names,.generalinfo,.password{
+    display:flex;
+    gap:50px;
+}
+
+
+
+/*Footer*/
 footer{
     display:flex;
     justify-content: center;align-items: center;
@@ -44,7 +94,3 @@ footer{
     height:7%;
 }
 
-.form{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.7em;
-}
