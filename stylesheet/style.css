@@ -1,0 +1,8 @@
+@font-face {
+    font-family: pirate-font;
+    src: url(../images/black-rose-font/BlackRose-2Onld.ttf);
+}
+:root{
+    background-image: url("../images/pirateship.jpeg");
+    font-family:pirate-font,Arial;
+}
