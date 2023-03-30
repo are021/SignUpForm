@@ -20,41 +20,44 @@
                     <h3>Fill out the Entries Below</h3>
                     <div class="names">
                         <div>
-                            <label for="firstname">FIRST NAME</label><br>
+                            <label for="firstname">FIRST NAME</label>
                         
                             <input type="text" name="firstname" id="firstname" required>
                         </div>
 
                         <div>
-                            <label for="lastname">LAST NAME</label><br>
+                            <label for="lastname">LAST NAME</label>
                             <input type="text" name="lastname" id="lastname" required>
                         </div>
                     </div>
                     <div class="generalinfo">
                         <div>
-                            <label for="email">EMAIL</label><br>
-                            <input type="email" name="email" id="email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         
                         <div>
-                            <label for="phone">PHONE NUMBER</label><br>
-                            <input type="tel" name="phonenumber" id="phone" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 123-456-7890">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phonenumber" id="phone" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 123-456-7890" required>
                         </div>
                     </div>
                     <div class="password">
                         <div>
                             
-                            <label for="password">PASSWORD</label><br>
-                            <input type="password" name="password" id="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
                             
                         </div>
                         <div>
-                            <label for="confirmation">CONFIRM PASSWORD</label><br>
-                            <input type="password" name="confirm" id="confirmation">
+                            <label for="confirmation">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm" id="confirmation" required>
                         </div>
                     </div>
                 </fieldset>
-                <button type="submit">Submit</button>
+                <div class="buttonstyling">
+                    <button type="submit">Submit</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
             </form>
         
     </div>
