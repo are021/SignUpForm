@@ -140,7 +140,9 @@ button[type='submit']{
     margin:10px 25px;
     font-size:1.5em;
 }
-
+.buttonstyling>p>a:visited{
+    color:rgb(193, 69, 32);
+}
 /*Footer*/
 footer{
     display:flex;
@@ -154,5 +156,10 @@ footer{
     background-color: gray;
     width:100vw;
     height:7%;
+}
+img{
+    height:auto;
+    width:30px;
+    margin-left:10px;
 }
 
